@@ -4,4 +4,12 @@
     <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JobCandidateHubAPI.Data\JobCandidateHubAPI.Data.csproj" />
+  </ItemGroup>
+
 </Project>

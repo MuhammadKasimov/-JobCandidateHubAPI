@@ -26,7 +26,9 @@ namespace JobCandidateHubAPI.Service.Services
 
             if (existUser is not null)
             {
-                candidateRepository.Update(dto.Adapt(existUser));
+                dto.Adapt(existUser);
+                existUser.UpdatedAt = DateTime.UtcNow;
+                candidateRepository.Update(existUser);
                 await candidateRepository.SaveChangesAsync();
                 return;
             }

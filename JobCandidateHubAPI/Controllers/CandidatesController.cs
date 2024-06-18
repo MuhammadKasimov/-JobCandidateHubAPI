@@ -2,6 +2,7 @@
 using JobCandidateHubAPI.Service.DTOs;
 using JobCandidateHubAPI.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace JobCandidateHubAPI.Controllers
 {

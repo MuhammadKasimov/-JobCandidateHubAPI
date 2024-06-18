@@ -2,6 +2,8 @@
 using JobCandidateHubAPI.Data.Repositories;
 using JobCandidateHubAPI.Service.Interfaces;
 using JobCandidateHubAPI.Service.Services;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
