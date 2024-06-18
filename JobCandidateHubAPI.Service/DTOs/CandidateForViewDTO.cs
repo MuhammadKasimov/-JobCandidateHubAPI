@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JobCandidateHubAPI.Domain.Entities
+namespace JobCandidateHubAPI.Service.DTOs
 {
-    public class Candidate
+    public class CandidateForViewDTO
     {
-        public long Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string PhoneNumber { get; set; }
