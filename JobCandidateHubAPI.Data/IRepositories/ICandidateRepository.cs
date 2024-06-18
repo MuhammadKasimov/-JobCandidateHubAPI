@@ -10,9 +10,9 @@ namespace JobCandidateHubAPI.Data.IRepositories
 {
     public interface ICandidateRepository
     {
-        Task<Candidate> GetAsync(Expression<Func<Candidate, bool>> expression, bool isTracking = true, string[] includes = null);
-        IQueryable<Candidate> GetAll(Expression<Func<Candidate, bool>> expression = null, string[] includes = null, bool isTracking = true);
-        Task<Candidate> CreateAsync(Candidate entity);
-        Candidate Update(Candidate entity);
+        Task<Candidate> GetAsync(Expression<Func<Candidate, bool>> expression, bool isTracking = true);
+        Task CreateAsync(Candidate entity);
+        void Update(Candidate entity);
+        Task SaveChangesAsync();
     }
 }

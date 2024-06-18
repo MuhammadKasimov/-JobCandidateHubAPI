@@ -22,28 +22,18 @@ namespace JobCandidateHubAPI.Data.Repositories
         }
 
 
-        public async Task<Candidate> CreateAsync(Candidate entity)
-            => (await dbSet.AddAsync(entity)).Entity;
+        public async Task CreateAsync(Candidate entity)
+            => await dbSet.AddAsync(entity);
 
 
-        public Candidate Update(Candidate entity) =>
-            dbSet.Update(entity).Entity;
+        public void Update(Candidate entity) =>
+            dbSet.Update(entity);
 
-        public IQueryable<Candidate> GetAll(Expression<Func<Candidate, bool>> expression = null, string[] includes = null, bool isTracking = true)
-        {
-            IQueryable<Candidate> query = expression is null ? dbSet : dbSet.Where(expression);
+        public async Task<Candidate> GetAsync(Expression<Func<Candidate, bool>> expression, bool isTracking = true) =>
+            await dbSet.Where(expression).FirstOrDefaultAsync();
 
-            if (includes is not null)
-                foreach (var include in includes)
-                    query = query.Include(include);
 
-            if (!isTracking)
-                query = query.AsNoTracking();
-
-            return query;
-        }
-
-        public async Task<Candidate> GetAsync(Expression<Func<Candidate, bool>> expression, bool isTracking = true, string[] includes = null) =>
-            await GetAll(expression, includes, false).FirstOrDefaultAsync();
+        public async Task SaveChangesAsync() =>
+            await dbContext.SaveChangesAsync();
     }
 }
