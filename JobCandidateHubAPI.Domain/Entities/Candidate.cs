@@ -17,7 +17,7 @@ namespace JobCandidateHubAPI.Domain.Entities
         public string LinkedInUrl { get; set; }
         public string GithubUrl { get; set; }
         public string Comment { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; }
     }
 }
