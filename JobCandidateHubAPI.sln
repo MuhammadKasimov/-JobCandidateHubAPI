@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobCandidateHubAPI.Domain", "JobCandidateHubAPI.Domain\JobCandidateHubAPI.Domain.csproj", "{B5462D4E-FE89-440F-AB18-65324D6E6AFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCandidateHubAPI.Domain", "JobCandidateHubAPI.Domain\JobCandidateHubAPI.Domain.csproj", "{B5462D4E-FE89-440F-AB18-65324D6E6AFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobCandidateHubAPI.Data", "JobCandidateHubAPI.Data\JobCandidateHubAPI.Data.csproj", "{B14463AA-1A9F-40EC-8103-C32A3606B042}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCandidateHubAPI.Data", "JobCandidateHubAPI.Data\JobCandidateHubAPI.Data.csproj", "{B14463AA-1A9F-40EC-8103-C32A3606B042}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobCandidateHubAPI.Service", "JobCandidateHubAPI.Service\JobCandidateHubAPI.Service.csproj", "{5B791BEA-B378-451B-98F6-14EB439F9252}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCandidateHubAPI.Service", "JobCandidateHubAPI.Service\JobCandidateHubAPI.Service.csproj", "{5B791BEA-B378-451B-98F6-14EB439F9252}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobCandidateHubAPI", "JobCandidateHubAPI\JobCandidateHubAPI.csproj", "{63D684CB-7D58-44DF-AFAF-4409BA745635}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCandidateHubAPI", "JobCandidateHubAPI\JobCandidateHubAPI.csproj", "{63D684CB-7D58-44DF-AFAF-4409BA745635}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobCandidateHubAPI.UnitTest", "JobCandidateHubAPI.UnitTest\JobCandidateHubAPI.UnitTest.csproj", "{8A29B0DB-063E-42DF-9CA3-215A76D9E4AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{63D684CB-7D58-44DF-AFAF-4409BA745635}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63D684CB-7D58-44DF-AFAF-4409BA745635}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63D684CB-7D58-44DF-AFAF-4409BA745635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A29B0DB-063E-42DF-9CA3-215A76D9E4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A29B0DB-063E-42DF-9CA3-215A76D9E4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A29B0DB-063E-42DF-9CA3-215A76D9E4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A29B0DB-063E-42DF-9CA3-215A76D9E4AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
